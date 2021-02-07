@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GREEN DECISIONS</title>
+
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/NavStyle.css">
+    <link rel="shortcut icon" href="imgs/earth.png">
+
+</head>
+
+<body>
+    <div class="top-map">
+        <div class="animate">
+            <div class="map">
+                <!--  <marquee><img src="imgs/mapGreen1.gif"></marquee>
+                <marquee id="map2"><img src="imgs/mapGreen1.gif"></marquee>-->
+
+                <img class="maps" id="map1" src="imgs/mapGreen3.gif" alt="mapGreen1">
+                <img class="maps" id="map2" src="imgs/mapGreen2.gif" alt="mapGreen2">
+                <img class="maps" id="map3" src="imgs/mapGreen1.gif" alt="mapGreen3">
+                <img class="maps" id="map4" src="imgs/mapRed1.gif" alt="mapRed1">
+                <img class="maps" id="map5" src="imgs/mapRed2.gif" alt="mapRed2">
+
+            </div>
+        </div>
+    </div>
+
+    <nav id="navg">
+        <ul>
+            <li>
+                <a href="home.html" class="link">Home</a>
+            </li>
+
+            <li>&#124;</li>
+
+            <li>
+                <a href="about.html" class="link">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="wrap">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="slider">
+            <div class="slide slide1">
+                <div class="slide-content">
+                    <p>Monday morning at 7:50 AM, you have to leave the house for school. Before you leave, would you do something with the air conditioner?</p>
+
+                </div>
+            </div>
+
+            <div class="slide silde 2">
+                <div class="slide-content">
+                    <p> Please Press Any Button</p>
+                    <div id="story1">
+                        <div class="popup" id="pop1">
+                            <h3>Result</h3>
+                            <p>Air conditioners consume quite a bit of energy. Besides, the fluorocarbons used as refrigerants are even more potent greenhouse gas than carbon dioxide. By turning it up several degrees after you leave the house will make it run less often!</p>
+                            <button id="pop1btn">next</button>
+                        </div>
+
+                        <img id="air_con" src="imgs/air_con.png" alt="air conditioner ">
+                        <input type="button" id="btn1" onclick="popup1(this.id)" value="">
+                        <input type="button" id="btn2" onclick="popup1(this.id)" value="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide3">
+                <div class="slide-content">
+                    <p>After you left the house, you have to take a ride to your school. Which transportation will you choose?</p>
+                </div>
+            </div>
+
+            <div class="slide slide4">
+                <div class="slide-content">
+                    <p>Please Make Your Choice</p>
+
+                    <div id="story2">
+                        <div class="popup" id="pop2">
+                            <h3>Result</h3>
+                            <p></p>
+                            <a id="learn" href="">Learn more</a>
+                            <button id="pop2btn">Next</button>
+                        </div>
+
+                        <a onclick="popup2('walk')"><img class="img walk" src="imgs/walk.PNG" alt="walk"></a>
+                        <a onclick="popup2('bus')"><img class="img bus" src="imgs/bus.PNG" alt="bus"></a>
+                        <a onclick="popup2('bike')"><img class="img bike" src="imgs/bike.PNG" alt="bike"></a>
+                        <a onclick="popup2('car')"><img class="img car" src="imgs/car.PNG" alt="car"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide slide5">
+            <div class="slide-content">
+                <p> You made it to your school! Now you have to go to the thrid floor to your office. Would you take the stairs or eveltor?</p>
+            </div>
+        </div>
+
+        <div class="slide slide6">
+            <div class="slide-content">
+                <p> Please Select Your Choice</p>
+                <div id="story3">
+                    <div class="popup" id="pop3">
+                        <h3> Result</h3>
+                        <p></p>
+                        <button id="pop3btn">next</button>
+                    </div>
+
+                    <a onclick="popup3('elevator')">
+                        <div class="outside">
+                            <img id="frame" src="imgs/elevator_frame.png" alt="elevator frame">
+                            <img id="close" src="imgs/elevator.png" alt="elevator open">
+                            <img id="left" src="imgs/elevator_left.png" alt="elevator leftdoor">
+                            <img id="right" src="imgs/elevator_right.png" alt="elevator rightdoor">
+                        </div>
+
+                    </a>
+
+                    <a onclick="popup3('stair')">
+                        <div class="outside1">
+                            <img id="close1" src="imgs/stair_close.png" alt="stair open">
+                            <img id="left1" src="imgs/stair_leftdoor.png" alt="stair leftdoor">
+                            <img id="right1" src="imgs/stair_rightdoor.png" alt="stair rightdoor">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide slide7">
+            <div class="slide-content">
+                <p> After lunch, you got wastes from your lunch box, Which trash can will you throw your trashes in?</p>
+            </div>
+        </div>
+
+        <div class="slide slide8">
+            <div class="slide-content">
+                <p>Please Drag Trash to Correct Trashcan</p>
+                <div>
+                    <div class="popup" id="correct">
+                        <h3>Great Job </h3>
+                        <p>According to the United States Environmental Protect Agency, Recycling wastes can "Reduces the amount of waste sent to landfills and incinerators， conserves natural resources such as timber, water, and minerals，and save energy!" Wastes classification is a great start to make this process a lot easier.
+                        </p>
+                        <button id="pop4btnCor">Next</button>
+                    </div>
+
+                    <div class="popup" id="incorrect">
+                        <h3>Nice Try, but not quite.</h3>
+                        <p>Hint: Leftover foods are usually a perishable waste, and things like plastics, papers, and metals are usually recyclable wastes. Things like batteries are hazardous wastes, and things like dirt are other wastes.
+                        </p>
+
+                        <button id="pop4btnInc">Next</button>
+                    </div>
+
+                    <div class="popup" id="end">
+                        <h3>Well Done</h3>
+                        <p>You have reached the end of the list of decisions. Our goal is to let you know that each little decision in your life matters and help global warming and global climate change!
+                        </p>
+                        <form method="get" action="about.html">
+                            <button type="submit" id="about">About Page</button>
+                        </form>
+                        <button id="start_over">Start Over</button>
+                    </div>
+
+                    <div id="trashes">
+                        <img src="imgs/bitten-apple.png" alt="bitten apple" class="trash" id="trash1" draggable=true ondragstart="drag(event)">
+                        <img src="imgs/bottledwater.png" alt="bottle water" class="trash" id="trash2" draggable=true ondragstart="drag(event)">
+                        <img src="imgs/sliverware.png" alt="sliverware" class="trash" id="trash3" draggable=true ondragstart="drag(event)">
+                        <img src="imgs/bag.png" alt="bag" class="trash" id="trash4" draggable=true ondragstart="drag(event)">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="cans">
+                        <img class="trashcan" id="trashcan1" src="imgs/hazardous_waste.png" alt="trashcan">
+                        <img class="open" id="can1" src="imgs/hazardous_waste_top.png" alt="trash top" ondragover="allowDrop(event)" ondrop="drop(event,'trashcan1')">
+                    </div>
+
+                    <div class="cans">
+                        <img class="trashcan" id="trashcan2" src="imgs/other_waste.png" alt="trashcan">
+                        <img class="open" id="can2" src="imgs/other_waste_top.png" alt="trash top" ondragover="allowDrop(event)" ondrop="drop(event,'trashcan2')">
+                    </div>
+
+                    <div class="cans">
+                        <img class="trashcan" id="trashcan3" src="imgs/perishable_waste.png" alt="trashcan">
+                        <img class="open" id="can3" src="imgs/perishable_waste_top.png" alt="trash top" ondragover="allowDrop(event)" ondrop="drop(event,'trashcan3')">
+                    </div>
+
+                    <div class="cans">
+                        <img class="trashcan" id="trashcan4" src="imgs/recycling_waste.png" alt="trashcan">
+                        <img class="open" id="can4" src="imgs/recycling_waste_top.png" alt="trash top" ondragover="allowDrop(event)" ondrop="drop(event,'trashcan4')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="arrow-right" class="arrow"></div>
+    </div>
+</body>
+<script type="text/javascript" src="js/homeScrips.js"></script>
+
+</html>

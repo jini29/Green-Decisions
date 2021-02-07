@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 100%;
+}
+
+.top-map {
+    overflow: hidden;
+    /*    height: 300px;*/
+
+}
+
+/*
+#map1,#map2{
+    width: 50%; 
+    max-height: 300px;
+background-size: 100%;
+    overflow: hidden;
+    position: relative;
+animation: marquee 10s linear infinite;
+    margin: 0;
+    padding: 0;
+}
+*/
+
+/*
+#map2{
+    left:100%;
+    top:0;
+}
+*/
+
+.map {
+    width: 100%;
+    max-height: 300px;
+    background-size: 20%;
+    overflow: hidden;
+    display: flex;
+}
+
+.maps {
+    width: 100%;
+}
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -700%;
+    }
+}
+
+.animate {
+    position: relative;
+    width: 800%;
+    /*  height: 300px;*/
+    animation: marquee 20s linear infinite;
+    /*display: flex;*/
+    overflow: hidden;
+}
+
+.animate:hover {
+    animation-play-state: paused;
+}
+
+/*#slider, */
+.wrap,
+.slide-content {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrap {
+    position: relative;
+}
+
+.slide {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.slide2,
+.slide4,
+.slide6,
+.slide8 {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 100px;
+
+}
+
+.slide-content p {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent black transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent black;
+    right: 0;
+    margin-right: 30px;
+}
+
+
+#air_con {
+    width: 450px;
+}
+
+#btn1,
+#btn2,
+#btn3 {
+    cursor: pointer;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+
+}
+
+#btn1 {
+    border-width: 0 15px 20px 15px;
+    border-color: transparent transparent black transparent;
+    margin-top: 84px;
+    margin-left: -105px;
+    background-color: transparent;
+}
+
+#btn2 {
+    border-width: 20px 15px 0 15px;
+    border-color: black transparent transparent transparent;
+    margin-top: 167px;
+    margin-left: -105px;
+    background-color: transparent;
+}
+
+
+
+#walk,
+#bike,
+#bus,
+#car:hover {}
+
+.img {
+    animation: scaledown .6s linear;
+    animation-fill-mode: forwards;
+}
+
+.img:hover {
+    cursor: pointer;
+    z-index: 100;
+    animation: scale .6s linear;
+    animation-fill-mode: forwards;
+}
+
+.walk {
+    width: 200px;
+    margin: 0 0 35px 0;
+}
+
+.bus {
+    width: 350px;
+    /*    margin-bottom: 30px;*/
+}
+
+.bike {
+    width: 250px;
+    margin: 0 0 20px 0;
+}
+
+.car {
+    width: 300px;
+    margin: 0;
+}
+
+@keyframes scaledown {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+/*Elevator Animation*/
+
+#story3 {
+    margin-left: -300px;
+    display: inline-block;
+}
+
+.outside {
+    position: relative;
+
+}
+
+#left,
+#right,
+#frame {
+    cursor: pointer;
+    position: absolute;
+}
+
+#close {
+    width: 200px;
+
+}
+
+#frame {
+    margin-left: -20px;
+    width: 290px;
+    height: 253px;
+
+}
+
+#left,
+#right {
+    width: 100px;
+    margin-top: 20px;
+    height: 233px;
+}
+
+#left {
+    margin-left: -199px;
+}
+
+#right {
+    margin-left: -100px;
+
+}
+
+#close:hover ~ #left,
+.outside:hover #left {
+    transform: translateX(-95%);
+    transition: 2s all;
+}
+
+#close:hover ~ #right,
+.outside:hover #right {
+    transform: translateX(95%);
+    transition: 2s all;
+}
+
+/*Stair Animation*/
+#close1,
+#left1,
+#right1 {
+    cursor: pointer;
+    position: absolute;
+}
+
+#close1 {
+    width: 240px;
+    margin-top: -270px;
+    margin-left: 250px;
+}
+
+#left1,
+#right1 {
+    width: 92px;
+    margin-top: -240px;
+}
+
+#left1 {
+    margin-left: 250px;
+}
+
+#right1 {
+    margin-left: 340px;
+}
+
+#close1:hover ~ #left1,
+.outside1:hover #left1 {
+    transform: perspective(300px) rotate(0deg);
+    transform-origin: left;
+    animation: openleft 1.5s Linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes openleft {
+    0% {
+        transform: perspective(300px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(300px) rotateY(89deg);
+    }
+}
+
+#close1:hover ~ #right1,
+.outside1:hover #right1 {
+    transform: perspective(300px) rotate(0deg);
+    transform-origin: right;
+    animation: openright 1.5s Linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes openright {
+    0% {
+        transform: perspective(300px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(300px) rotateY(-89deg);
+    }
+}
+
+.cans {
+    display: inline-block;
+    position: relative;
+}
+
+.trashcan {
+    padding: 10px;
+
+    display: inline;
+}
+
+.open {
+    width: 150px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -159px;
+}
+
+/*
+#can1{
+    margin-left: -159px;
+}
+
+#can2 {
+    margin-left: -159px;
+
+}
+
+#can3 {
+    margin-left: -75px;
+}
+
+#can4 {
+    margin-left: -88px;
+}
+*/
+
+#trashcan1:hover ~ #can1,
+#can1:hover {
+    transform: rotate(180deg);
+    transform-origin: top;
+    animation: opentop 1.5s linear;
+    animation-fill-mode: forwards;
+}
+
+#trashcan2:hover ~ #can2,
+#can2:hover {
+    transform: rotate(180deg);
+    transform-origin: top;
+    animation: opentop 1.5s linear;
+    animation-fill-mode: forwards;
+}
+
+#trashcan3:hover ~ #can3,
+#can3:hover {
+    transform: rotate(180deg);
+    transform-origin: top;
+    animation: opentop 1.5s linear;
+    animation-fill-mode: forwards;
+}
+
+#trashcan4:hover ~ #can4,
+#can4:hover {
+    transform: rotate(180deg);
+    transform-origin: top;
+    animation: opentop 1.5s linear;
+    animation-fill-mode: forwards;
+}
+
+
+.trash {
+    margin-bottom: 75px;
+    width: 75px;
+    display: inline-block;
+    cursor: move;
+    margin-left: 50px;
+}
+
+.trash:hover {
+    animation: shake 2s linear infinite;
+}
+
+#about {
+    margin-bottom: 10px;
+}
+
+@keyframes opentop {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(180deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    10% {
+        transform: rotate(-10deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    90% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.popup {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+    width: 50%;
+    background-color: azure;
+    opacity: 0.8;
+    border-radius: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.popup {
+    padding: 20px 15px;
+    cursor: default;
+}
+
+.popup p {
+    font-size: 18px;
+    margin-bottom: 15px;
+
+
+}
+
+.popup button {
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: beige;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    box-shadow: 3px 3px 3px darkgray inset;
+}
+
+#learn {
+    display: none;
+    padding-bottom: 20px;
+    margin-top: -10px;
+}
