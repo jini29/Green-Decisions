@@ -250,6 +250,7 @@ footer {
 footer h6{
     font-size: 25px;
 }
+
 @media screen and (min-width: 900px) {
     #sidebar {
         display: block;
@@ -258,3 +259,4 @@ footer h6{
     #textbox {
         margin-left: 250px;
     }
+}
